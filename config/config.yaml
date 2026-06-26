@@ -1,0 +1,26 @@
+# ─────────────────────────────────────────────────────
+# config.yaml
+# Central configuration file for the entire project.
+# Change parameters here — never inside Python files.
+# ─────────────────────────────────────────────────────
+
+# Data file paths
+data:
+  raw_path: "data/raw/Amazon.csv"
+  processed_path: "data/processed/Amazon_cleaned.csv"
+
+# KMeans Clustering parameters
+kmeans:
+  n_clusters: 3
+  random_state: 42
+  n_init: 10
+
+# Apriori / Market Basket Analysis parameters
+apriori:
+  min_support: 0.05
+  min_lift: 1.0
+
+# Visualization parameters
+plots:
+  figures_dir: "reports/figures"
+  dpi: 150
