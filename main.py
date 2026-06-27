@@ -156,6 +156,20 @@ print(df.groupby("KMeans_Cluster")[
      "Customer_Reviews_Importance"]
 ].mean().round(2).to_string())
 
+# ══════════════════════════════════════════════════════════
+#  MARKET BASKET ANALYSIS
+# ══════════════════════════════════════════════════════════
+
+# ── Market Basket Analysis ────────────────────────────────
+from src.market_basket import run_market_basket
+
+section_header("MARKET BASKET ANALYSIS")
+rules = run_market_basket(
+    df,
+    min_support=cfg["apriori"]["min_support"],
+    min_lift=cfg["apriori"]["min_lift"]
+)
+
 
 # ══════════════════════════════════════════════════════════
 # TASK 4 — RECOMMENDATION AND REVIEW INSIGHTS
