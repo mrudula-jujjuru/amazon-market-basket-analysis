@@ -50,6 +50,8 @@ amazon-market-basket-analysis/
 
 │   ├── clustering.py           # Task 3: KMeans clustering
 
+│   ├── market_basket.py        # Association Rules
+
 │   └── plot_helpers.py         # Tasks 2,3,4,5: Visualizations
 
 │
@@ -104,7 +106,7 @@ jupyter notebook notebooks/amazon_analysis.ipynb
 |------|-------------|--------|
 | **Task 1** | Data Cleaning & Preparation | `data/processed/Amazon_cleaned.csv` |
 | **Task 2** | Descriptive Behavior Analysis | Charts 01–07 |
-| **Task 3** | Customer Segmentation (Rule-based + KMeans) | Charts 08–10 |
+| **Task 3** | Customer Segmentation (Rule-based + KMeans + Association rules) | Charts 08–10 |
 | **Task 4** | Recommendation & Review Insights | Charts 11–13 |
 | **Task 5** | Summary Dashboard | `00_summary_dashboard.png` |
 
